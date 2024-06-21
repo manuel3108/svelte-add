@@ -41,7 +41,7 @@ jobs:
               uses: changesets/action@v1
               with:
                   publish: echo 'publish'
-                  version: ci:version
+                  version: pnpm ci:version
                   createGithubReleases: false
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
