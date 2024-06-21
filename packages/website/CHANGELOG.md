@@ -1,5 +1,13 @@
 # @svelte-add/website
 
+## 2.1.7
+
+### Patch Changes
+
+-   test ([`2175d6fd6cbbab416294140953abb2eadb7604ed`](https://github.com/manuel3108/svelte-add/commit/2175d6fd6cbbab416294140953abb2eadb7604ed))
+
+-   another changeset ([`15c2e4f6cc9558bfdbe2ee9442f85981ed09ab0d`](https://github.com/manuel3108/svelte-add/commit/15c2e4f6cc9558bfdbe2ee9442f85981ed09ab0d))
+
 ## 2.1.6
 
 ### Patch Changes
