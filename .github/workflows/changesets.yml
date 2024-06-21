@@ -40,12 +40,15 @@ jobs:
               id: changesets
               uses: changesets/action@v1
               with:
-                  publish: pnpm ci:publish
-                  version: pnpm ci:version
+                  publish: echo 'publish'
+                  version: echo 'version'
                   createGithubReleases: false
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN_2024 }}
+
+            - name: test output
+              run: echo '${{ steps.changesets.outputs.publishedPackages }}'
 
             - name: Publish website
               if: steps.changesets.outputs.published == 'true' && contains(steps.changesets.outputs.publishedPackages, '@svelte-add/website')
