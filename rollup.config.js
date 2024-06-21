@@ -13,7 +13,7 @@ const adderFolders = fs
     .filter((item) => item.isDirectory())
     .map((item) => item.name);
 const adderNamesAsString = adderFolders.map((x) => `"${x}"`);
-
+// test
 /** @type {import("rollup").RollupOptions[]} */
 const dtsConfigs = [];
 
